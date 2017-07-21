@@ -1,0 +1,35 @@
+body {
+  background-color: orange;
+}
+
+#box {
+  width: 100px;
+  height: 100px;  
+  box-sizing: border-box;
+  border-radius: 20%; 
+  animation: magic 2.5s alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes magic {
+	0% {background-color: teal;
+		border: 5px solid blue;
+		transform: translate(250px,300px) rotate(765deg);
+	}
+	50%{
+	  background-color: yellow;
+	  border-radius: 35%;
+	  transform: translate(850px, 150px) rotate3d(5,0,0,-855deg);
+	}
+	60% {background-color: red;
+		  border: 5px solid green;
+	}
+}
+p {
+  color: cyan;
+  font-size: 25px;
+  font-family: 'Alegreya', serif;
+  text-align: center;
+ margin: 0 auto;
+}  
+70% {color: orange;
